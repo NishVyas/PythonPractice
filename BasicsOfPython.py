@@ -43,6 +43,10 @@ d = {'c1': ['A', 'B', 'C', 'D'],
 df = pd.DataFrame(d)
 print (df)
 
+'Working with panels
+'Panel is a data structure that handles 3D data
 d = {'Item1': pd.DataFrame(np.random.randn(4, 3)),
      'Item2': pd.DataFrame(np.random.randn(4, 2))}
 pd.Panel(d)
+print (d)
+
