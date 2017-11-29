@@ -29,3 +29,7 @@ df2 = df.reindex(['a0', 'a1', 'a10', 'a11', 'a20', 'a21', 'a30', 'a31', 'a40', '
 df2
 'Fill in the empty rows with 0
 df2.fillna(0)
+'Fill the null values with forward propagation (values previous to null replace null)
+df2.fillna(method='pad')
+'Fill null values with column means instead
+df2.fillna(df2.mean())
