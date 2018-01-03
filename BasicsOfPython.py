@@ -5,7 +5,7 @@ Spyder Editor
 This is a temporary script file.
 """
 
-'Getting familiar with NumPy
+# Getting familiar with NumPy
 import numpy as np
 n_array = np.array([[0, 1, 2, 3],
  [4, 5, 6, 7],
@@ -23,16 +23,16 @@ n_array.shape=(6,2)
 n_array
 n_array.transpose()
 
-'Working with Pandas and Series
-'Series are 1D arrays that hold any type of data
+# Working with Pandas and Series
+# Series are 1D arrays that hold any type of data
 import pandas as pd
 pd.Series(np.random.randn(5))
 pd.Series(np.random.randn(5), index=['a','b','c','d','e'])
 d={'A':10,'B':20,'C':30}
 pd.Series(d)
 
-'Working with Dataframes here
-'2D data structure w/ columns that can be of different data types
+# Working with Dataframes here
+# 2D data structure w/ columns that can be of different data types
 d = {'c1': pd.Series(['A', 'B', 'C']),
       'c2': pd.Series([1, 2., 3., 4.])}
 df = pd.DataFrame(d)
@@ -43,8 +43,8 @@ d = {'c1': ['A', 'B', 'C', 'D'],
 df = pd.DataFrame(d)
 print (df)
 
-'Working with panels
-'Panel is a data structure that handles 3D data
+# Working with panels
+# Panel is a data structure that handles 3D data
 d = {'Item1': pd.DataFrame(np.random.randn(4, 3)),
      'Item2': pd.DataFrame(np.random.randn(4, 2))}
 pd.Panel(d)
